@@ -19,7 +19,7 @@ The reviewed code is the state of the `vlsi/pgjdbc` fork pinned by the tag [`cod
 
 ## What's here
 
-This is the English version; the Russian one lives in [`ru/`](ru/README.md). The files follow the pipeline stages, from the original task to the final comparison.
+This is the English version. This README and the files under `en/` are translated from the Russian originals in [`ru/`](ru/README.md), which are the source. The files follow the pipeline stages, from the original task to the final comparison.
 
 ### The original task
 

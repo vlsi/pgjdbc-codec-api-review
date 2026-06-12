@@ -131,7 +131,7 @@ This is the most important section, because fixing it after third-party dependen
 6. **Multirange — in scope for v1?**
 7. **The SPI override and priority policy** (P8).
 8. **Offline API:** fix `CodecContext` as an interface now, so as not to block it (CG3).
-9. **Text read of arrays:** will the new path ever take parsing on itself, or does delegation to `ArrayDecoding` remain forever? (CR5, R1).
+9. **Text read of arrays:** will the new path ever take over parsing, or does delegation to `ArrayDecoding` remain forever? (CR5, R1).
 
 ---
 

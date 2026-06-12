@@ -140,7 +140,7 @@ Briefly assess the quality of the two comparison results:
 * whether they checked material claims against the code;
 * whether they separated facts from opinions;
 * whether they distinguished hallucinations from unresolved claims;
-* whether they replaced the comparison with a new architecture review;
+* whether they avoided replacing the comparison with a new architecture review;
 * whether they gave a practical next-step plan.
 
 Do not turn this section into an assessment of "which model is smarter". Assess only the fitness of the result.
