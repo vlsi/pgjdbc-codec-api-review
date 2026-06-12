@@ -2,7 +2,7 @@
 
 This repository is an experiment in comparing architecture reviews that several LLM agents produced for the public Codec API in pgjdbc.
 
-The interesting part is not only what the models concluded, but the comparison process itself:
+The interesting part is the comparison process itself, not just what the models concluded:
 
 * how the original engineering task was framed for an architecture review;
 * what problems the different models found;
@@ -29,7 +29,7 @@ This is the English version; the Russian one lives in [`ru/`](ru/README.md). The
 
 The original statement already carried plenty of technical context, but it had not yet pinned down the important forks: code review or design review, whether the Codec API is a public SPI, which PostgreSQL types are in scope, and whether to design for a standalone encode/decode API.
 
-What proved useful was not that an LLM "improved the prompt", but the iteration that surfaced the hidden goals of the work. After the refinement, the prompt was no longer a request to look at `Int4ArrayLeafCodec`; it had become an architecture review of a public codec system for every PostgreSQL type.
+What helped wasn't an LLM 'improving the prompt'. It was the iteration that surfaced the hidden goals of the work. After the refinement, the prompt was no longer a request to look at `Int4ArrayLeafCodec`; it had become an architecture review of a public codec system for every PostgreSQL type.
 
 ### The primary architecture reviews
 
@@ -84,9 +84,9 @@ If you care about the methodology rather than pgjdbc:
 
 The experiment runs in several stages.
 
-0. First, the raw engineering statement is refined into a design-review prompt. The point of this step is not to reword the text but to surface the hidden decisions: the type of review, the boundaries of the public API, the type scope, standalone encode/decode, and what counts as a useful result.
+0. First, the raw engineering statement is refined into a design-review prompt. The point of this step is to surface the hidden decisions, not to reword the text: the type of review, the boundaries of the public API, the type scope, standalone encode/decode, and what counts as a useful result.
 1. Several models then run an architecture review of the same code, independently.
-2. Other models do not redo the review; they compare the results — extracting claims, checking them against the code, and labelling each with a status.
+2. Other models do not redo the review; they compare the results, extracting claims, checking them against the code, and labelling each with a status.
 3. Finally, the two comparisons are themselves compared, to see where the adjudication results already agree.
 
 The key idea is to distrust a confident statement that comes without evidence.
@@ -120,7 +120,7 @@ The most stable conclusions:
 * the primitive fast path has to be designed explicitly, or the general container model becomes too boxing-heavy;
 * some of the models' claims turned out to be design trade-offs rather than bugs.
 
-The most useful output was not a single "best" answer, but the overlap of the independent results plus a list of the divergences that could be checked against the code.
+The most useful output was not a single 'best' answer, but the overlap of the independent results plus a list of the divergences that could be checked against the code.
 
 ## How to reproduce the process
 
@@ -147,7 +147,7 @@ This is a research artefact, not an official pgjdbc document.
 
 LLM answers can contain mistakes. Check the important claims against the code, the tests, the JDBC documentation, and PostgreSQL's behaviour.
 
-The value of the experiment is not that one model is "right", but that independent answers can be reduced to a checkable form: claims, evidence, status, unresolved questions, and next steps.
+The experiment's value isn't that one model is 'right'. It's that independent answers can be reduced to a checkable form: claims, evidence, status, unresolved questions, and next steps.
 
 ## License
 
