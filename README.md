@@ -148,3 +148,7 @@ This is a research artefact, not an official pgjdbc document.
 LLM answers can contain mistakes. Check the important claims against the code, the tests, the JDBC documentation, and PostgreSQL's behaviour.
 
 The value of the experiment is not that one model is "right", but that independent answers can be reduced to a checkable form: claims, evidence, status, unresolved questions, and next steps.
+
+## License
+
+Licensed under [CC BY 4.0](LICENSE). Share and adapt with attribution, including commercially.
