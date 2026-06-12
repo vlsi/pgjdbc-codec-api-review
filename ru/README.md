@@ -13,7 +13,7 @@
 
 Все запросы к моделям — и первичные ревью, и сравнения, и финальное сравнение — выполнялись с максимальным reasoning effort. Использованы Fable 5, GPT 5.5 и Opus 4.8.
 
-Ревью выполнялось по состоянию кода в форке `vlsi/pgjdbc`, зафиксированному тегом [`codec-api-review-2026-06-12`](https://github.com/vlsi/pgjdbc/tree/codec-api-review-2026-06-12) (коммит `4b2df19`).
+Ревью выполнялось по состоянию кода в форке `vlsi/pgjdbc`, зафиксированному тегом [`codec-api-review-2026-06-12`](https://github.com/vlsi/pgjdbc/tree/codec-api-review-2026-06-12) (коммит `4b2df19`). Эксперимент вырос из работы над pgjdbc PR [#3062](https://github.com/pgjdbc/pgjdbc/pull/3062).
 
 ## Что здесь лежит
 

@@ -13,7 +13,7 @@ The interesting part is the comparison process itself, not just what the models 
 
 Every model request — the primary reviews, the comparisons, and the final comparison — ran at maximum reasoning effort. The models were Fable 5, GPT 5.5, and Opus 4.8.
 
-The reviewed code is the state of the `vlsi/pgjdbc` fork pinned by the tag [`codec-api-review-2026-06-12`](https://github.com/vlsi/pgjdbc/tree/codec-api-review-2026-06-12) (commit `4b2df19`).
+The reviewed code is the state of the `vlsi/pgjdbc` fork pinned by the tag [`codec-api-review-2026-06-12`](https://github.com/vlsi/pgjdbc/tree/codec-api-review-2026-06-12) (commit `4b2df19`). The work grew out of pgjdbc PR [#3062](https://github.com/pgjdbc/pgjdbc/pull/3062).
 
 Русская версия: [`ru/README.md`](ru/README.md).
 
